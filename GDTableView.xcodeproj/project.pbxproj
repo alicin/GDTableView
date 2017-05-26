@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FBFD19BD3B55063175944F8 /* Pods_GDTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFDC61AFCD0DFBC27FE40C7 /* Pods_GDTableView.framework */; };
 		5A92127F1ED7D50C0074CFD9 /* GDTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A92127D1ED7D50C0074CFD9 /* GDTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A9212861ED7D9A80074CFD9 /* GDTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9212851ED7D9A80074CFD9 /* GDTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A92127A1ED7D50C0074CFD9 /* GDTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A92127D1ED7D50C0074CFD9 /* GDTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDTableView.h; sourceTree = "<group>"; };
 		5A92127E1ED7D50C0074CFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A9212851ED7D9A80074CFD9 /* GDTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDTableView.swift; sourceTree = "<group>"; };
+		6EEAE0A4D472F03FEBD3FEEA /* Pods-GDTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDTableView/Pods-GDTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		960BFEA316E670241A309847 /* Pods-GDTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDTableView/Pods-GDTableView.release.xcconfig"; sourceTree = "<group>"; };
+		EDFDC61AFCD0DFBC27FE40C7 /* Pods_GDTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +27,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBFD19BD3B55063175944F8 /* Pods_GDTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A6EAD36B862F8AF70388C7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDFDC61AFCD0DFBC27FE40C7 /* Pods_GDTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5A9212701ED7D50C0074CFD9 = {
 			isa = PBXGroup;
 			children = (
 				5A92127C1ED7D50C0074CFD9 /* GDTableView */,
 				5A92127B1ED7D50C0074CFD9 /* Products */,
+				76F57F3D5D253E8A30BF1B05 /* Pods */,
+				2A6EAD36B862F8AF70388C7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +65,18 @@
 			children = (
 				5A92127D1ED7D50C0074CFD9 /* GDTableView.h */,
 				5A92127E1ED7D50C0074CFD9 /* Info.plist */,
+				5A9212851ED7D9A80074CFD9 /* GDTableView.swift */,
 			);
 			path = GDTableView;
+			sourceTree = "<group>";
+		};
+		76F57F3D5D253E8A30BF1B05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EEAE0A4D472F03FEBD3FEEA /* Pods-GDTableView.debug.xcconfig */,
+				960BFEA316E670241A309847 /* Pods-GDTableView.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A9212821ED7D50C0074CFD9 /* Build configuration list for PBXNativeTarget "GDTableView" */;
 			buildPhases = (
+				1927478E5429D58AF67A6D98 /* [CP] Check Pods Manifest.lock */,
 				5A9212751ED7D50C0074CFD9 /* Sources */,
 				5A9212761ED7D50C0074CFD9 /* Frameworks */,
 				5A9212771ED7D50C0074CFD9 /* Headers */,
 				5A9212781ED7D50C0074CFD9 /* Resources */,
+				09C0F24810E773661BA610D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +125,7 @@
 					5A9212791ED7D50C0074CFD9 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = RKX83LKFZP;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,11 +157,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09C0F24810E773661BA610D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDTableView/Pods-GDTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1927478E5429D58AF67A6D98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5A9212751ED7D50C0074CFD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A9212861ED7D9A80074CFD9 /* GDTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +302,9 @@
 		};
 		5A9212831ED7D50C0074CFD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EEAE0A4D472F03FEBD3FEEA /* Pods-GDTableView.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -253,13 +319,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gDrop.com.tavsanlarAS.GDTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		5A9212841ED7D50C0074CFD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 960BFEA316E670241A309847 /* Pods-GDTableView.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -297,6 +366,7 @@
 				5A9212841ED7D50C0074CFD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

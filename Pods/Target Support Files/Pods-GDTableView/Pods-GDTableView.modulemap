@@ -1,0 +1,6 @@
+framework module Pods_GDTableView {
+  umbrella header "Pods-GDTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
