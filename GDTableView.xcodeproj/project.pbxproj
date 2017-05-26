@@ -46,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				5A92127C1ED7D50C0074CFD9 /* GDTableView */,
+				5A9212871ED8A5AF0074CFD9 /* Resources */,
 				5A92127B1ED7D50C0074CFD9 /* Products */,
 				76F57F3D5D253E8A30BF1B05 /* Pods */,
 				2A6EAD36B862F8AF70388C7E /* Frameworks */,
@@ -68,6 +69,13 @@
 				5A9212851ED7D9A80074CFD9 /* GDTableView.swift */,
 			);
 			path = GDTableView;
+			sourceTree = "<group>";
+		};
+		5A9212871ED8A5AF0074CFD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		76F57F3D5D253E8A30BF1B05 /* Pods */ = {
