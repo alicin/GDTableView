@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GDTableView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "An extension of NSTableView."
   s.description  = "An extension of NSTableView that notifies the parent controller when the list reaches the end to add functionality to table views like 'load more'."
   s.homepage     = "https://github.com/alicin/GDTableView"
