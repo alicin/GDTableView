@@ -12,13 +12,13 @@ import Cocoa
     @objc optional func bottomDidReached()
 }
 
-class GDTableView: NSTableView {
+open class GDTableView: NSTableView {
     
     var triggerHeight: CGFloat = 10.0
     var locked: Bool = false
     
     private var subDelegate: GDTableViewDelegate?
-    override var delegate: NSTableViewDelegate? {
+    override open var delegate: NSTableViewDelegate? {
         get { return self.subDelegate }
         set { self.subDelegate = newValue as! GDTableViewDelegate? }
     }
